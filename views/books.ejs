@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Books</title>
+  </head>
+  <body>
+    <% if (books.length > 0){ %>
+    <h1>Name | Category | Price</h1>
+    <% for (const book of books) { %>
+    <ul>
+      <li style="font-size: x-large">
+        <%= book.name %> | <%= book.category %> | <%= book.price %>
+      </li>
+    </ul>
+    <% } %> <% } else { %>
+    <h1>No Books Found</h>
+    <% } %>
+  </body>
+</html>
