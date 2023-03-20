@@ -14,9 +14,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bookRouter);
 
-// console.log("express type =", typeof express);
-// console.log("bookRouter type =", typeof bookRouter);
-
 sequelize.sync().then(() => {
   console.log("Connected to database");
   app.listen(PORT, () => {
